@@ -33,8 +33,13 @@ class Solution:
             # Sort checkpoints from least to greatest
             #type num: list of int
             #return type: int
-            
-            #TODO: Write code below to returnn an int with the solution to the prompt.
+            i = 0
+            sort(checkpoints)
+            answer = 0
+            while i < 3:
+                if (checkpoints[i] + checkpoints[i+1]) > answer:
+                    answer = checkpoints[i] + checkpoints[i+1]
+                i +=1
             
             pass
 
