@@ -45,7 +45,7 @@ class Solution:
             distance = []
             for i in range(len(checkpoints) - 1):
                 distance.append(checkpoints[i+1] - checkpoints[i])
-            distances = bubblesort(distances)
+            distances = bubblesort(distance)
             return distances[len(checkpoints) - 2]
             
             pass
