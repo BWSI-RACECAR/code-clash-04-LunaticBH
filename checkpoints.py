@@ -34,7 +34,7 @@ class Solution:
             #type num: list of int
             #return type: int
             i = 0
-            sort(checkpoints)
+            sorted(checkpoints)
             answer = 0
             while i < 3:
                 if (checkpoints[i] + checkpoints[i+1]) > answer:
