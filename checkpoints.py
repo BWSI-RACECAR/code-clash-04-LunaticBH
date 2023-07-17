@@ -40,7 +40,7 @@ class Solution:
                 if (checkpoints[i] + checkpoints[i+1]) > answer:
                     answer = checkpoints[i] + checkpoints[i+1]
                 i +=1
-            
+            return answer
             pass
 
 def main():
