@@ -33,14 +33,21 @@ class Solution:
             # Sort checkpoints from least to greatest
             #type num: list of int
             #return type: int
-            i = 0
-            sorted(checkpoints)
-            answer = 0
-            while i < 3:
-                if (checkpoints[i] + checkpoints[i+1]) > answer:
-                    answer = checkpoints[i] + checkpoints[i+1]
-                i +=1
-            return answer
+            def bubblesort(arr):
+                for i in range(0, len(arr)):
+                    for j in range(0, len(arr) - 1):
+                        if arr[j] > arr[j + 1]:
+                            temp = arr[j]
+                            arr[j] = arr[j + 1]
+                            arr[j+1] = temp
+                return arr
+            checkpoints = bubblesort(checkpoints)
+            distance = []
+            for i in range(len(checkpoints) - 1):
+                distance.append(checkpoints[i+1] - checkpoints[i])
+            distances = bubblesort(distances)
+            return distances[len(checkpoints) - 2)
+            
             pass
 
 def main():
